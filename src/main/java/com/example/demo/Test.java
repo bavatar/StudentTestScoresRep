@@ -13,6 +13,9 @@ public class Test {
     @ManyToOne
     private Student student;
 
+    public Test() {
+    }
+
     public long getTestid() {
         return testid;
     }

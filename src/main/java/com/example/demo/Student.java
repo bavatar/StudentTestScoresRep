@@ -12,6 +12,9 @@ public class Student {
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Test> testScores;
 
+    public Student() {
+    }
+
     public long getStudentid() {
         return studentid;
     }
